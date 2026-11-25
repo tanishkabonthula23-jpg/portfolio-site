@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina Studio | Pure HTML & CSS Interactive Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Pure CSS Live Theme State Controllers -->
+  <input type="radio" name="site-theme" id="theme-sunset" class="state-radio" checked />
+  <input type="radio" name="site-theme" id="theme-coral" class="state-radio" />
+  <input type="radio" name="site-theme" id="theme-berry" class="state-radio" />
+
+  <div class="site-canvas">
+    <!-- Ambient Animated Background Orbs -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+
+    <!-- Sticky Glassmorphic Navigation -->
+    <header class="navbar">
+      <a href="#hero" class="logo">
+        <span class="logo-dot">✦</span> Lumina<span class="accent-text">CSS</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#carousel-section">Carousel</a>
+        <a href="#flip-gallery">3D Cards</a>
+        <a href="#accordion-section">FAQ</a>
+      </nav>
+
+      <!-- Live Theme Switcher Buttons -->
+      <div class="theme-switcher" aria-label="Color Theme Switcher">
+        <label for="theme-sunset" class="theme-pill sunset-pill" title="Sunset Horizon">Sunset</label>
+        <label for="theme-coral" class="theme-pill coral-pill" title="Tropical Coral">Coral</label>
+        <label for="theme-berry" class="theme-pill berry-pill" title="Aurora Berry">Berry</label>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-badge">100% Pure HTML5 & CSS3 • Zero JavaScript</div>
+      <h1>Crafted with Motion, Depth & <span class="gradient-heading">Vibrant Color</span></h1>
+      <p class="hero-desc">
+        Explore an interactive web experience powered entirely by advanced CSS selectors, 3D transforms, smooth keyframe animations, and live theme switching.
+      </p>
+      <div class="hero-actions">
+        <a href="#carousel-section" class="btn btn-primary">Explore Carousel ↓</a>
+        <a href="#flip-gallery" class="btn btn-glass">Flip 3D Cards</a>
+      </div>
+    </section>
+
+    <!-- Interactive Pure-CSS Carousel Section -->
+    <section id="carousel-section" class="section-block">
+      <div class="section-header">
+        <h2>Interactive Destination Carousel</h2>
+        <p>Use the side arrows or bottom indicator pills to glide between curated visual worlds.</p>
+      </div>
+
+      <div class="carousel-wrapper">
+        <!-- Carousel Slide State Radios -->
+        <input type="radio" name="carousel-slide" id="slide-1" class="state-radio" checked />
+        <input type="radio" name="carousel-slide" id="slide-2" class="state-radio" />
+        <input type="radio" name="carousel-slide" id="slide-3" class="state-radio" />
+        <input type="radio" name="carousel-slide" id="slide-4" class="state-radio" />
+
+        <!-- Slide Viewport -->
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <!-- Slide 1 -->
+            <article class="slide slide-card-1">
+              <div class="slide-visual">🌅</div>
+              <div class="slide-content">
+                <span class="slide-tag">01 • Golden Coast</span>
+                <h3>Amber Dusk Horizons</h3>
+                <p>Layered warm gradients and glowing glassmorphism bring tranquil coastal sunsets directly to your screen.</p>
+                <div class="slide-nav-arrows">
+                  <label for="slide-4" class="arrow-btn" aria-label="Previous Slide">← Prev</label>
+                  <label for="slide-2" class="arrow-btn next" aria-label="Next Slide">Next →</label>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="slide slide-card-2">
+              <div class="slide-visual">🌺</div>
+              <div class="slide-content">
+                <span class="slide-tag">02 • Tropical Bloom</span>
+                <h3>Coral Reef Sanctuary</h3>
+                <p>Vibrant flamingo pinks and warm tangerine highlights engineered with multi-stop CSS linear gradients.</p>
+                <div class="slide-nav-arrows">
+                  <label for="slide-1" class="arrow-btn" aria-label="Previous Slide">← Prev</label>
+                  <label for="slide-3" class="arrow-btn next" aria-label="Next Slide">Next →</label>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="slide slide-card-3">
+              <div class="slide-visual">🔮</div>
+              <div class="slide-content">
+                <span class="slide-tag">03 • Velvet Twilight</span>
+                <h3>Magenta Prism Ridge</h3>
+                <p>Deep plum shadows paired with luminous orchid highlights create rich visual hierarchy without heavy scripts.</p>
+                <div class="slide-nav-arrows">
+                  <label for="slide-2" class="arrow-btn" aria-label="Previous Slide">← Prev</label>
+                  <label for="slide-4" class="arrow-btn next" aria-label="Next Slide">Next →</label>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4 -->
+            <article class="slide slide-card-4">
+              <div class="slide-visual">✨</div>
+              <div class="slide-content">
+                <span class="slide-tag">04 • Solar Flare</span>
+                <h3>Marigold Starlight</h3>
+                <p>Fluid CSS cubic-bezier transitions deliver silky 60fps card sliding across desktop and mobile viewports.</p>
+                <div class="slide-nav-arrows">
+                  <label for="slide-3" class="arrow-btn" aria-label="Previous Slide">← Prev</label>
+                  <label for="slide-1" class="arrow-btn next" aria-label="Next Slide">Next →</label>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Bottom Dot Indicators -->
+        <div class="carousel-dots">
+          <label for="slide-1" class="dot dot-1" aria-label="Go to Slide 1"></label>
+          <label for="slide-2" class="dot dot-2" aria-label="Go to Slide 2"></label>
+          <label for="slide-3" class="dot dot-3" aria-label="Go to Slide 3"></label>
+          <label for="slide-4" class="dot dot-4" aria-label="Go to Slide 4"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Interactive Flip Cards Section -->
+    <section id="flip-gallery" class="section-block">
+      <div class="section-header">
+        <h2>3D Perspective Flip Cards</h2>
+        <p>Hover over (or tap on mobile) any card below to reveal the CSS engineering behind it.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front card-tone-1">
+              <span class="card-icon">🎛️</span>
+              <h3>Radio State Engine</h3>
+              <p>Hover or tap to flip ↻</p>
+            </div>
+            <div class="flip-back">
+              <h4>How It Works</h4>
+              <p>Hidden <code>&lt;input type="radio"&gt;</code> elements paired with <code>:checked ~</code> general sibling combinators control slides and themes cleanly.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front card-tone-2">
+              <span class="card-icon">🧊</span>
+              <h3>3D Preserve Space</h3>
+              <p>Hover or tap to flip ↻</p>
+            </div>
+            <div class="flip-back">
+              <h4>How It Works</h4>
+              <p><code>perspective: 1000px</code>, <code>transform-style: preserve-3d</code>, and <code>backface-visibility: hidden</code> create realistic two-sided cards.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front card-tone-3">
+              <span class="card-icon">🎨</span>
+              <h3>Dynamic Variables</h3>
+              <p>Hover or tap to flip ↻</p>
+            </div>
+            <div class="flip-back">
+              <h4>How It Works</h4>
+              <p>CSS Custom Properties (<code>--primary</code>, <code>--bg-main</code>) update the entire color scheme in one click from the top navbar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Pure-HTML/CSS Accordion -->
+    <section id="accordion-section" class="section-block">
+      <div class="section-header">
+        <h2>Interactive Expandable Insights</h2>
+        <p>Click any question below to smoothly expand details using native HTML & CSS.</p>
+      </div>
+
+      <div class="accordion-stack">
+        <details class="faq-item" open>
+          <summary>Why build an interactive site with only HTML & CSS?</summary>
+          <p>Pure CSS interactions load instantaneously, never fail if scripts are blocked, and demonstrate deep mastery of modern layout engines, selectors, and hardware-accelerated animations.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How does the live color theme switcher work?</summary>
+          <p>Three radio buttons sit at the top of the DOM. Selecting a theme label triggers <code>#theme-coral:checked ~ .site-canvas</code>, overriding the CSS color variables across every card and button simultaneously.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is this layout responsive on phones and laptops?</summary>
+          <p>Yes! Fluid typography with <code>clamp()</code>, CSS Grid <code>auto-fit</code> columns, and flexible touch-friendly carousel buttons adapt seamlessly to any screen size.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Designed & Engineered with Pure HTML5 & CSS3 • Ready for GitHub Pages</p>
+    </footer>
+  </div>
+</body>
+</html>
