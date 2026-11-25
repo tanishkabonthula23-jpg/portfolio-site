@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Atelier North</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="brand-wordmark">
+        <span class="brand-mark"></span>
+        <span>Atelier North</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link active">Work</a>
+        <a href="studio.html" class="nav-link">Studio</a>
+        <a href="contact.html" class="nav-link nav-cta">Start a Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="page-intro">
+        <p class="eyebrow">Archive &amp; Case Studies</p>
+        <h1>Selected digital work</h1>
+        <p class="lead">
+          Browse recent concepts spanning structured web interfaces and editorial publishing layouts.
+        </p>
+      </div>
+
+      <div class="filter-wrapper">
+        <input type="radio" name="work-filter" id="filter-all" class="filter-radio" checked />
+        <input type="radio" name="work-filter" id="filter-apps" class="filter-radio" />
+        <input type="radio" name="work-filter" id="filter-editorial" class="filter-radio" />
+
+        <div class="filter-bar">
+          <label for="filter-all" class="filter-btn btn-all">All Projects</label>
+          <label for="filter-apps" class="filter-btn btn-apps">Interface &amp; Apps</label>
+          <label for="filter-editorial" class="filter-btn btn-editorial">Editorial Sites</label>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card cat-apps">
+            <div class="project-banner tone-forest">01 / INTERFACE</div>
+            <div class="project-content">
+              <span class="pill">Interface &amp; Apps</span>
+              <h3>Kova Financial Ledger</h3>
+              <p>Clean ledger tables, status badges, and keyboard-friendly form layouts for daily operations.</p>
+            </div>
+          </article>
+
+          <article class="project-card cat-editorial">
+            <div class="project-banner tone-terracotta">02 / EDITORIAL</div>
+            <div class="project-content">
+              <span class="pill pill-warm">Editorial Sites</span>
+              <h3>Solis Botanical Roasters</h3>
+              <p>Warm storytelling sections paired with structured product cards and seasonal release notes.</p>
+            </div>
+          </article>
+
+          <article class="project-card cat-apps">
+            <div class="project-banner tone-slate">03 / INTERFACE</div>
+            <div class="project-content">
+              <span class="pill">Interface &amp; Apps</span>
+              <h3>Meridian API Reference</h3>
+              <p>Readable multi-column documentation layout with clear code blocks and anchored sections.</p>
+            </div>
+          </article>
+
+          <article class="project-card cat-editorial">
+            <div class="project-banner tone-olive">04 / EDITORIAL</div>
+            <div class="project-content">
+              <span class="pill pill-warm">Editorial Sites</span>
+              <h3>Fieldnote Architecture Press</h3>
+              <p>Book catalog and monograph archive inspired by print typography and museum exhibition guides.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Atelier North</p>
+        <p class="footer-copy">Multi-page HTML &amp; CSS architectural showcase.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="studio.html">Studio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
