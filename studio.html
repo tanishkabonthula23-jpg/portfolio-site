@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio | Atelier North</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="brand-wordmark">
+        <span class="brand-mark"></span>
+        <span>Atelier North</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="studio.html" class="nav-link active">Studio</a>
+        <a href="contact.html" class="nav-link nav-cta">Start a Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="page-intro">
+        <p class="eyebrow">Philosophy &amp; Process</p>
+        <h1>How we approach digital craft</h1>
+        <p class="lead">
+          Good interfaces respect the reader's attention. We prioritize semantic markup, high contrast, and maintainable CSS tokens.
+        </p>
+      </div>
+
+      <div class="process-list">
+        <div class="process-step">
+          <span class="step-badge">Step 01</span>
+          <div>
+            <h3>Audit &amp; Content Structure</h3>
+            <p>We map out every page, heading level, and call-to-action before touching visual styling.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <span class="step-badge">Step 02</span>
+          <div>
+            <h3>Design Tokens &amp; Grid Foundations</h3>
+            <p>We define color variables, spacing scales, and responsive breakpoints in a single organized stylesheet.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <span class="step-badge">Step 03</span>
+          <div>
+            <h3>Polish, Accessibility &amp; Deployment</h3>
+            <p>We verify contrast, keyboard focus states, and mobile scaling before publishing to GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-block">
+        <h2>Common Questions</h2>
+        <details class="accordion-box" open>
+          <summary>Why use multiple HTML files instead of hiding everything on one page?</summary>
+          <p>Separating pages into <code>index.html</code>, <code>work.html</code>, <code>studio.html</code>, and <code>contact.html</code> mirrors how real multi-page websites are structured and keeps each file clean and easy to read.</p>
+        </details>
+
+        <details class="accordion-box">
+          <summary>How can I customize the color palette later?</summary>
+          <p>All core colors live inside <code>:root</code> custom properties at the top of <code>styles.css</code>, so you can update brand accents across all four pages from one place.</p>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Atelier North</p>
+        <p class="footer-copy">Multi-page HTML &amp; CSS architectural showcase.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="studio.html">Studio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
