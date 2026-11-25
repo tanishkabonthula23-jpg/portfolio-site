@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kestrel Grid | Interactive HTML &amp; CSS Web Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-cyan" aria-hidden="true"></div>
+  <div class="bg-glow glow-gold" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-beacon" aria-hidden="true"></span>
+        <span>Kestrel Grid</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-item active">Home</a>
+        <a href="solutions.html" class="nav-item">Solutions</a>
+        <a href="architecture.html" class="nav-item">Architecture</a>
+        <a href="connect.html" class="nav-item nav-btn">Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="kicker">● Pure HTML5 &amp; CSS3 Engineering</span>
+          <h1>Dynamic web interfaces with <span class="text-gradient">continuous motion</span> &amp; clarity.</h1>
+          <p>
+            A multi-page web experience built with semantic HTML5 and animated CSS3—featuring an auto-cycling showcase carousel, shimmer cards, and interactive state controls without JavaScript.
+          </p>
+          <div class="cta-row">
+            <a href="#spotlight" class="btn btn-cyan">Watch Auto Carousel ↓</a>
+            <a href="solutions.html" class="btn btn-ghost">Explore Solutions</a>
+          </div>
+        </div>
+
+        <aside class="telemetry-card" aria-label="Platform Highlights">
+          <div class="metric-box">
+            <span class="metric-num">04</span>
+            <span class="metric-desc">Linked multi-page HTML views</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-num">15s</span>
+            <span class="metric-desc">Smooth CSS keyframe slide loop</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-num">0 JS</span>
+            <span class="metric-desc">Pure CSS animations, filters &amp; accordions</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="spotlight" class="section section-band">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Automated Showcase</span>
+            <h2>Auto-Moving Feature Carousel</h2>
+          </div>
+          <a href="architecture.html" class="link-accent">See how the CSS works →</a>
+        </div>
+
+        <div class="auto-carousel">
+          <input type="radio" name="carousel-jump" id="jump-1" class="carousel-jump" />
+          <input type="radio" name="carousel-jump" id="jump-2" class="carousel-jump" />
+          <input type="radio" name="carousel-jump" id="jump-3" class="carousel-jump" />
+
+          <div class="carousel-stage">
+            <div class="carousel-track">
+              <article class="slide-panel">
+                <div class="slide-art art-cyan">
+                  <span class="slide-tag">Module 01</span>
+                  <span class="slide-glyph">⬡</span>
+                </div>
+                <div class="slide-info">
+                  <span class="badge-pill">Kinetic Layout</span>
+                  <h3>Fluid Grid Choreography</h3>
+                  <p>
+                    Responsive multi-column containers paired with smooth hover elevation and top-edge light sweeps keep interfaces lively.
+                  </p>
+                  <p class="carousel-caption-note">Hover anywhere on this carousel to pause auto-sliding.</p>
+                </div>
+              </article>
+
+              <article class="slide-panel">
+                <div class="slide-art art-gold">
+                  <span class="slide-tag">Module 02</span>
+                  <span class="slide-glyph">◈</span>
+                </div>
+                <div class="slide-info">
+                  <span class="badge-pill badge-gold">Color Contrast</span>
+                  <h3>Deep Navy &amp; Cyan Accents</h3>
+                  <p>
+                    High-legibility slate and cyan surfaces balanced with warm amber highlights create depth and unmistakable visual hierarchy.
+                  </p>
+                  <p class="carousel-caption-note">Click a slide pill below to lock onto any panel.</p>
+                </div>
+              </article>
+
+              <article class="slide-panel">
+                <div class="slide-art art-mint">
+                  <span class="slide-tag">Module 03</span>
+                  <span class="slide-glyph">❖</span>
+                </div>
+                <div class="slide-info">
+                  <span class="badge-pill">Multi-Page Flow</span>
+                  <h3>Seamless Page Navigation</h3>
+                  <p>
+                    Move effortlessly across Home, Solutions, Architecture, and Connect with persistent sticky navigation and active states.
+                  </p>
+                  <p class="carousel-caption-note">All four pages share a single maintainable CSS stylesheet.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-pills">
+            <label for="jump-1" class="jump-pill pill-1">01. Kinetic Grid</label>
+            <label for="jump-2" class="jump-pill pill-2">02. Navy &amp; Cyan</label>
+            <label for="jump-3" class="jump-pill pill-3">03. Page Flow</label>
+            <span class="auto-hint">⟳ Auto-moving • Hover to pause</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker">Core Pillars</span>
+            <h2>Built for engagement and speed</h2>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="feature-card">
+            <span class="card-num">01 / MOTION</span>
+            <h3>Keyframe Transitions</h3>
+            <p>Hardware-friendly <code>transform</code> animations drive background drift, glowing beacons, and automatic slide cycling.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-num">02 / STRUCTURE</span>
+            <h3>Four Dedicated Views</h3>
+            <p>Organized into distinct pages so every topic has breathing room and clear navigation links.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-num">03 / RESPONSIVE</span>
+            <h3>Adaptive Viewports</h3>
+            <p>Fluid grids and flexible navigation bars resize cleanly across laptops, tablets, and mobile phones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <p class="footer-title">Kestrel Grid</p>
+        <p class="footer-sub">4-page HTML5 &amp; CSS3 interactive web experience.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="connect.html">Connect</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
