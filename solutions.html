@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions | Kestrel Grid</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow glow-cyan" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-beacon" aria-hidden="true"></span>
+        <span>Kestrel Grid</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="solutions.html" class="nav-item active">Solutions</a>
+        <a href="architecture.html" class="nav-item">Architecture</a>
+        <a href="connect.html" class="nav-item nav-btn">Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="page-header">
+        <span class="kicker">Interactive Filter</span>
+        <h1>Interface &amp; motion solutions</h1>
+        <p>Click a filter tab below to switch card categories using pure CSS selectors.</p>
+      </div>
+
+      <input type="radio" name="sol-tab" id="tab-all" class="tab-radio" checked />
+      <input type="radio" name="sol-tab" id="tab-ui" class="tab-radio" />
+      <input type="radio" name="sol-tab" id="tab-motion" class="tab-radio" />
+
+      <div class="tab-bar">
+        <label for="tab-all" class="tab-btn t-all">All Modules</label>
+        <label for="tab-ui" class="tab-btn t-ui">UI Systems</label>
+        <label for="tab-motion" class="tab-btn t-motion">Motion &amp; Effects</label>
+      </div>
+
+      <div class="grid-2 cards-filter-grid">
+        <article class="feature-card item-ui">
+          <span class="card-num">UI SYSTEM</span>
+          <h3>Modular Card Grids</h3>
+          <p>Balanced spacing, crisp borders, and clear typographic hierarchy for dashboards and showcases.</p>
+        </article>
+
+        <article class="feature-card item-motion">
+          <span class="card-num">MOTION &amp; EFFECTS</span>
+          <h3>Auto-Cycling Track</h3>
+          <p>Smooth horizontal translation keyframes that pause on hover so visitors can read comfortably.</p>
+        </article>
+
+        <article class="feature-card item-ui">
+          <span class="card-num">UI SYSTEM</span>
+          <h3>Accessible Form Controls</h3>
+          <p>High-contrast inputs, clear focus outlines, and clean field grouping across desktop and mobile.</p>
+        </article>
+
+        <article class="feature-card item-motion">
+          <span class="card-num">MOTION &amp; EFFECTS</span>
+          <h3>Ambient Grid &amp; Glows</h3>
+          <p>Slow-moving background coordinates and soft radial light pulses add depth without cluttering text.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <p class="footer-title">Kestrel Grid</p>
+        <p class="footer-sub">4-page HTML5 &amp; CSS3 interactive web experience.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="connect.html">Connect</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
